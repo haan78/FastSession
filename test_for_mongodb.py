@@ -44,8 +44,8 @@ async def read(request: Request):
 
 
 @app.get("/kill", response_class=HTMLResponse)
-async def kill(response: Response):
-    fsm.kill(response)
+async def kill(request:Request,response: Response):
+    fsm.kill(request,response)
     return html("Session has been deleted!")
 
 

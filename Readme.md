@@ -20,7 +20,7 @@
 ### Common Methods:
 - write(response: fastapi.Response, data) : writes session data
 - read(requeset: fastapi.Request) : Returns session data
-- kill(response: fastapi.Response) : Kills session data
+- kill(requeset: fastapi.Request, response: fastapi.Response) : Kills session data
 
 ## Example 
 To run examples you need to add uvicorn extentions 
